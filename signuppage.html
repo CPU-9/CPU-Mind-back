@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h2><span class="brand-cpu">CPU</span> <span class="brand-mind">Mind</span></h2>
+    <h3>회원가입</h3>
+    <form id="signupForm" method="POST" action="/signup">
+      <div class="input-group">
+        <label for="newUsername">아이디</label>
+        <input type="text" id="newUsername" name="username" required>
+        <!-- <button type="button" id="checkUsernameButton">중복 확인</button>
+      </div>
+      <p id="usernameCheckResult"></p> -->
+      </div>
+      <div class="input-group">
+        <label for="newPassword">비밀번호</label>
+        <input type="password" id="newPassword" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirmPassword">비밀번호 확인</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+      <button type="submit" class="signup-button">확인</button>
+      <button type="button" onclick="location.href='Lginpage.html'" class="login-link">로그인 페이지로 돌아가기</button>
+    </form>
+  </div>
+  <script src="Lgin_1.js"></script>
+</body>
+</html>
